@@ -9,7 +9,10 @@ from langchain_openai.chat_models import ChatOpenAI
 
 
 OPENAI_API_KEY = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
-st.header("My First Chatbot")
+st.header("AskMyPDF")
+st.write("AskMyPDF is your intelligent document assistant that turns static PDFs into interactive knowledge hubs. Simply upload a PDF file, and AskMyPDF will analyze its content, allowing you to ask questions and get instant, accurate answers. Whether it’s research papers, manuals, contracts, or e-books, AskMyPDF makes understanding complex documents effortless and efficient.
+
+With advanced AI capabilities, AskMyPDF streamlines your workflow by delivering precise insights without the need to read through pages of text. It's perfect for students, professionals, and anyone seeking quick answers from their documents!")
 
 #upload pdf file
 with st.sidebar:
