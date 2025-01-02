@@ -5,13 +5,10 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain_openai.chat_models import ChatOpenAI
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
-NewOPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-OPENAI_API_KEY=NewOPENAI_API_KEY[1: len(NewOPENAI_API_KEY)-1]
+
+OPENAI_API_KEY = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
 st.header("My First Chatbot")
 
 #upload pdf file
